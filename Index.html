@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta content="Prime TV, Filmes online, Séries online, Filme online, Séries online, Filmes dublado, Filmes legendado, Séries dublado, Séries legendado, Filmes online dublado, Filmes grátis, Assistir filmes, Assistir filmes online, Assistir filmes grátis, Assistir filmes dublado, Assistir filmes legendado, Assistir séries grátis, Assistir séries dublado, Assistir séries legendado, Prime TV, Prime TV filmes, Prime TV séries, Assistir Prime TV, Assistir filmes 1080p, Assistir filmes 720p, Assistir filmes no celular, Assistir filmes mobile, Assistir séries no celular, Prime TV grátis" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- CSS -->
+  <link rel="stylesheet" href="src/app/css/global/Index.css" title="Style App" type="text/css" />
+  <link rel="stylesheet" href="src/app/css/App.css" title="Style App" async type="text/css" />
+  <link rel="stylesheet" href="src/app/css/refresh.css" type="text/css" />
+  <link rel="manifest" href="manifest.json" />
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="accets/app-icons/icon-72x72.png">
+  <link rel="apple-touch-icon" href="accets/app-icons/icon-96x96.png">
+  <link rel="apple-touch-icon" href="accets/app-icons/icon-128x128.png">
+  <link rel="apple-touch-icon" href="accets/app-icons/icon-144x144.png">
+  <link rel="apple-touch-icon" href="accets/app-icons/icon-152x152.png">
+  <link rel="apple-touch-icon" href="accets/app-icons/icon-192x192.png">
+  <link rel="apple-touch-icon" href="accets/app-icons/icon-384x384.png">
+  <link rel="apple-touch-icon" href="accets/app-icons/icon-512x512.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#000000">
+  <meta name="theme-color" content="#000000">
+  <!-- app photo guia -->
+  <link rel="icon" href="accets/app-icons/icon-72x72.png" type="image/png" />
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(function(OneSignal) {
+      OneSignal.init({
+        appId: "e29914b6-2fac-4262-8fcd-b01b2deb7d65",
+      });
+    });
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LT33SCY7S7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-LT33SCY7S7');
+  </script>
+  <title>Prime TV+</title>
+</head>
+<body>
+   <div id="alert">
+   	<div class="type-alert content">
+   		<div class="top">
+   			<h3>Tem certeza que deseja isso?</h3>
+   			<p>
+   				Lorem commodo enim dolore mollit occaecat consequat dolore proident cillum. 
+   			</p>
+   		</div>
+   		<div class="bottom">
+   			<div class="yes">
+   				ok
+   			</div>
+   		</div>
+   	</div>
+   	<div class="type-confirm content">
+   		<div class="top">
+   			<h3>Tem certeza que deseja isso?</h3>
+   			<p>Velit sit consectetur enim magna labore consequat adipisicing nisi. Nostrud ea cillum aute commodo nisi.</p>
+   		</div>
+   		<div class="bottom">
+   			<div class="yes">
+   				ok
+   			</div>
+   			<div class="cancel">
+   				Cancelar
+   			</div>
+   		</div>
+   	</div>
+   </div>
+	 <div id="loading">
+	 	<svg class="spin loading icon" viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+		    <g>
+		        <circle cx='16' cy='16' fill='none' r='14' stroke-width='4' style='stroke: #0697FE; opacity: 0.2;'></circle>
+		    </g>
+		    <g class='loading-spin-circle'>
+		        <circle cx='16' cy='16' fill='none' r='14' stroke-width='4' style='stroke: #0697FE; stroke-dasharray: 80px; stroke-dashoffset: 60px;'></circle>
+		    </g>
+		</svg>
+	 </div>
+	 <div id="loading-app">
+	 	<p>Prime Tv<span>+</span></p>
+	 	<span class="version">Versão: 4.5</span>
+	 </div>
+   <div id="refreshIndicator" class="hide">
+      <svg id="iconRefreshIndicator" class="icon" viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'>
+		    <g>
+		        <circle cx='16' cy='16' fill='none' r='14' stroke-width='4' style='stroke: #0697FE; opacity: 0.2;'></circle>
+		    </g>
+		    <g class='loading-spin-circle'>
+		        <circle cx='16' cy='16' fill='none' r='14' stroke-width='4' style='stroke: #0697FE; stroke-dasharray: 80px; stroke-dashoffset: 60px;'></circle>
+		    </g>
+		</svg>
+    </div>
+    <div id="click-away" class="click-away"></div>
+   
+   <div id="pages-and-header">
+   	<header>
+     <div data-page="more-options" class="floating-element-option content-profile">
+      <img class="profile img-user-profile" src="" /> 
+      <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    		<use xlink:href="src/icons/ios-arrow-back.svg#ios-arrow-back"></use>
+      </svg>
+      
+      <div id="more-options" class="floating-element header-more-options">
+      	<div class="info">
+      		<p>Seus usuários</p>
+        </div>
+      	<div class="options">
+      		<div class="users">
+      			<img class="img-user-profile" src="">
+      		</div>
+      		<!-- <div class="users">
+      			<img src="accets/default_profile_photo/fp_13.jpg">
+      		</div> -->
+      		<div class="users">
+      			<img src="accets/default_profile_photo/fp_4.jpg">
+      		</div>
+      		<div class="users">
+      			<img src="accets/default_profile_photo/fp_6.jpg">
+      		</div>
+      	</div>
+      </div>
+    </div>
+    <h1 id="name-page"></h1>
+    <div data-page="search" class="option-bar">
+      <div class="click-effect">
+      	<svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    		<use xlink:href="src/icons/ios-search.svg#ios-search"></use>
+     	 </svg>
+      </div>
+    </div>
+  </header>
+     <main id="content">
+        <div id="home" class="tab-content active">
+          <div class="scroll">
+          	<div class="popular-1 popular">
+          		<img class="image-destaque">
+          		<div class="info">
+          			<div class="float">
+          				<div class="runtime">
+          				</div>
+          			</div>
+          			<div class="bottom">
+          				<div class="text">
+          					<p><span class="media-type"></span> | <span class="plataform"></span></p>
+          					<h1 class="title"></h1>
+          					<div class="imdb">
+          						<div class="img">
+          							<img src="src/icons/logos/IMDB_logo.png" />
+          						</div>
+          						<div class="vote_count"></div>
+          						<div class="category">
+          						</div>
+          					</div>
+          				</div>
+          				<div class="FlexAlign">
+          					
+          					<div data-page="film-page" class="option-bar play btn">
+          						<button class="click-effect btn-play" type="button">
+          						  <svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+		  						      	<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+		   						      </svg>
+          						  <span>Assistir agora</span>
+          						 </button>
+          					</div>
+          					<div class="home-save-library more-options">
+          					<svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-plus.svg#path-1"></use>
+                     </svg>
+          			  	</div>
+          				</div>
+          			</div>
+          		</div>
+          	</div>
+           
+            <p class="session-title">Topo nas paradas: Prime TV+</p>
+            <div class="b-slide-1 big-slide all-slides">
+              <!-- START OF CARDS -->
+              
+              <!-- END OF CARDS -->
+            </div>
+            <br />
+            <p class="session-title">Canais e Apps</p>
+            <div id="channelsSlide" class="slide all-slides">
+              
+            </div>
+            <p class="session-title">Filmes populares</p>
+            <div class="slide-1 slide all-slides">
+              <!-- START OF CARDS -->
+              <!-- END OF CARDS -->
+            </div>
+            <p class="session-title">Agora na Prime TV+</p>
+            <div class="s-slide-1 slim-slide all-slides">
+              <!-- START OF CARDS -->
+              <!-- END OF CARDS -->
+            </div>
+            <p class="session-title">Chegando à Prime TV+</p>
+            <div class="slide-2 slide all-slides">
+              <!-- START OF CARDS -->
+              
+              <!-- END OF CARDS -->
+            </div>
+            <p class="session-title">Filmes de ação</p>
+            <div class="slide-3 slide all-slides">
+              <!-- START OF CARDS -->
+              
+              <!-- END OF CARDS -->
+            </div>
+            <p class="session-title">Filmes de ficção científica</p>
+            <div class="slide-4 slide all-slides">
+              <!-- START OF CARDS -->
+              
+              <!-- END OF CARDS -->
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+        
+        <div id="media-page" class="tab-content">
+        	<div class="scroll">
+        		
+        	</div>
+        </div>
+        
+        <!-- START DISCOVER PAGE -->
+       <div id="discover" class="tab-content">
+          <div class="scroll">
+            <p class="session-title">Filtered by: TMDB movies</p>
+            <div class="slide all-slides">
+              <!-- START OF CARDS -->
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <!-- END OF CARDS -->
+            </div>
+            <br />
+            <div class="slide all-slides">
+              <!-- START OF CARDS -->
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <!-- END OF CARDS -->
+            </div>
+            <br />
+            <div class="slide all-slides">
+              <!-- START OF CARDS -->
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <!-- END OF CARDS -->
+            </div>
+            <br />
+            <div class="slide all-slides">
+              <!-- START OF CARDS -->
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <!-- END OF CARDS -->
+            </div>
+            <br />
+            <div class="slide all-slides">
+              <!-- START OF CARDS -->
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  
+                </div>
+              </div>
+              <!-- END OF CARDS -->
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+        <!-- START DISCOVER PAGE -->
+        
+       <!-- START SERVICES PAGE -->
+        <div id="library" class="tab-content">
+          <div class="scroll">
+            <div class="no-movies">
+                <div class="title">
+                  Sem filmes adicionados
+                </div>
+                <div class="text">
+                  Adicione filmes ou séries a sua biblioteca pra assistir mais tarde.
+                </div>
+              </div>
+            <div class="slide library-slides">
+            </div>
+          </div>
+        </div>
+       <!-- START SERVICES PAGE -->
+       
+        <!-- START SETTINGS PAGE -->
+        <div id="profile" class="tab-content">
+          <div class="scroll">
+            <h1 class="title">Perfil</h1>
+            <div class="informations">
+              <div class="photo-profile">
+                <!-- <ion-icon name="contact"></ion-icon> -->
+                <div class="content-profile">
+                  <img class="img-user-profile" src="" alt="profile">
+                </div>
+              </div>
+              <div class="info">
+                <p class="firebase name"></p>
+                <p class="firebase email"></p>
+              </div>
+              <div data-page="edit-profile" class="edit option-bar">
+                <div class="click-effect">
+                	<svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                		<use xlink:href="src/icons/ios-create.svg#ios-create-1"></use>
+                		<use xlink:href="src/icons/ios-create.svg#ios-create-2"></use>
+								</svg>
+                </div>
+              </div>
+            </div>
+            <div class="content-settings">
+              <div class="container">
+                <div data-page="continue-watching" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-time-7.svg#ios-time"></use>
+                    </svg>
+                    <p>Continuar assistindo</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div data-page="downloads" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-cloud-download.svg#ios-cloud-download"></use>
+                    </svg>
+                    <p>Meus downloads</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div data-page="account-manager" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-contacts.svg#ios-contacts"></use>
+                    </svg>
+                    <p>Gerenciar perfis</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                
+                <div data-page="security-privacy" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-finger-print.svg#ios-finger-print-1"></use>
+                      <use xlink:href="src/icons/ios-finger-print.svg#ios-finger-print-2"></use>
+                      <use xlink:href="src/icons/ios-finger-print.svg#ios-finger-print-3"></use>
+                      <use xlink:href="src/icons/ios-finger-print.svg#ios-finger-print-4"></use>
+                      <use xlink:href="src/icons/ios-finger-print.svg#ios-finger-print-5"></use>
+                     
+                     </svg>
+                    <p>Privacidade e segurança</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div class="logout-button options">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-exit.svg#ios-exit"></use>
+                    </svg>
+                    <p>Desconectar</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div data-page="events" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-calendar.svg#ios-calendar"></use>
+                    </svg>
+                    <p>Eventos</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div data-page="devices-conected" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/iphone.svg#iphone"></use>
+                    </svg>
+                    <p>Dispositivos Conectados</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div data-page="doar" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-cafe.svg#ios-cafe"></use>
+                    </svg>
+                    <p>Doar</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div data-page="notifications" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-notifications.svg#ios-notifications"></use>
+                    </svg>
+                    <p>Notificações push</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div data-page="backup" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-cloud-done.svg#ios-cloud-done"></use>
+                    </svg>
+                    <p>Backup de dados</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div data-page="terms-od-service" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-text.svg#ios-text"></use>
+                    </svg>
+                    <p>Termos & Serviço</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div data-page="sobre" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-document.svg#ios-document-1"></use>
+                      <use xlink:href="src/icons/ios-document.svg#ios-document-2"></use>
+                    </svg>
+                    <p>Sobre</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div data-page="help-center" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-chatbubbles.svg#ios-chatbubbles-1"></use>
+                      <use xlink:href="src/icons/ios-chatbubbles.svg#ios-chatbubbles-2"></use>
+                    </svg>
+                    <p>Central de ajuda</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+                <div data-page="feedback" class="options option-bar">
+                  <div class="click-effect">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-paper.svg#ios-paper"></use>
+                      
+                     </svg>
+                    <p>Feedback</p>
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                			<use xlink:href="src/icons/ios-arrow-forward.svg#ios-arrow-forward"></use>
+										</svg>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+        <!-- END SETTINGS PAGE -->
+        
+        <!-- START EDIT PROFILE PAGE -->
+        <div id="edit-profile" class="tab-content">
+          <div class="scroll">
+            <div class="profile-picture">
+              <h2>Editar meu Avatar</h2>
+              <div class="options">
+                <div class="dataPublic_dynamic dynamic">
+                  
+                </div>
+                <!-- <div class="more"></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END EDIT PROFILE PAGE -->
+        
+        
+        <!-- START CONTINUE WATCHING -->
+        <div id="continue-watching" class="tab-content">
+        	<div class="scroll">
+        		<div class="simple-page-header">
+              <svg class="icon back" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              	<use xlink:href="src/icons/ios-arrow-back.svg#ios-arrow-back"></use>
+							</svg>
+              <p>Continuar assistindo</p>
+            </div>
+        	</div>
+        </div>
+        <!-- END CONTINUE WATCHING -->
+        
+        <!-- START DOWNLOADS PAGE -->
+        <div id="downloads" class="tab-content">
+          <div class="scroll">
+            <div class="simple-page-header">
+              <svg class="icon back" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              	<use xlink:href="src/icons/ios-arrow-back.svg#ios-arrow-back"></use>
+							</svg>
+              <p data-page="search" class="option-bar">Meus downloads</p>
+            </div>
+            <div class="list-downloads">
+             
+              <div class=" card">
+                <div class="click-effect">
+                  <div class="image">
+                  <img src="accets/Teste-4.jpg">
+                </div>
+                <div class="content">
+                  <div class="text">
+                    <h3>La casa de papel</h3>
+                    <div class="size">
+                      <div class="file-size"><span>0.98</span>GB</div><div class="season">T<span>3</span> - </div><div class="episode">Episódio <span class="ep-number">4</span></div></div>
+                  </div>
+                  <div class="content-icon">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-cloud-download.svg#ios-cloud-download"></use>
+                    </svg>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class=" card">
+                <div class="click-effect">
+                  <div class="image">
+                  <img src="accets/Teste-3.jpg">
+                </div>
+                <div class="content">
+                  <div class="text">
+                    <h3>Aquaman 2: O Reino Perdido (2023)</h3>
+                    <div class="size">
+                      <div class="file-size"><span>2</span>GB</div>
+                      </div>
+                  </div>
+                  <div class="content-icon">
+                    <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="src/icons/ios-cloud-done.svg#ios-cloud-done"></use>
+                    </svg>
+                  </div>
+                </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <!-- END DOWNLOADS PAGE -->
+        
+        <!-- START ACCOUNT MANAGER PAGE -->
+        <div id="account-manager" class="tab-content">
+          <div class="scroll">
+            <div class="simple-page-header">
+            <svg class="icon back" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              	<use xlink:href="src/icons/ios-arrow-back.svg#ios-arrow-back"></use>
+						</svg>
+            <p>Gerenciar perfis</p>
+          </div>
+          </div>
+        </div>
+       <!-- END ACCOUNT MANAGER PAGE -->
+       
+        <!-- START SECURITY PRIVACY PAGE -->
+        <div id="security-privacy" class="tab-content">
+          <div class="scroll">
+            <div class="simple-page-header">
+            <svg class="icon back" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              	<use xlink:href="src/icons/ios-arrow-back.svg#ios-arrow-back"></use>
+						</svg>
+            <p>Privacidade e segurança</p>
+          </div>
+          </div>
+        </div>
+        <!-- END SECURITY PRIVACY PAGE -->
+        
+        <!-- START SEARCH PAGE -->
+        <div id="search" class="tab-content">
+          <div class="scroll">
+            <div class="header">
+            	<div class="container">
+            	<svg class="icon back" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+              	<use xlink:href="src/icons/ios-arrow-back.svg#ios-arrow-back"></use>
+							</svg>
+            	<div class="search-box-containment">
+           	  <input placeholder="Busque por filme, séries" type="text" name="search-box" id="search-box" autocomplete="off" />
+        	    <div class="clear-input">
+      	        <svg class="icon ios-close" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+									<use xlink:href="src/icons/ios-close-6.svg#ios-close"></use>
+    					  </svg>
+    	        </div>
+  	        </div>
+          
+            	</div>
+          <div class="categories">
+            <div class="card active btn-popular-movies-category">
+              <div>
+                <p>Principais</p>
+              </div>
+              <div class="highlighter"></div>
+            </div>
+            <div class="card btn-category-of-popular-series">
+              <div>
+                <p>Mais recentes</p>
+              </div>
+              <div class="highlighter"></div>
+            </div>
+            <div class="card btn-popular-animations-category">
+              <div>
+                <p>Filmes</p>
+              </div>
+              <div class="highlighter"></div>
+            </div>
+            <div class="card btn-popular-animations-category">
+              <div>
+                <p>Séries</p>
+              </div>
+              <div class="highlighter"></div>
+            </div>
+          </div>
+            </div>
+           <div class="slide results">
+           	
+           </div>
+          <div class="recommendations">
+            <div class="slide-5 slide all-slides">
+              <!-- START OF CARDS -->
+              
+              <!-- END OF CARDS --> 
+            </div>
+            <div class="s-slide-2 slim-slide all-slides">
+              <!-- START OF CARDS -->
+              <!-- END OF CARDS -->
+            </div>
+            
+          </div>
+          <div class="suggest">
+            <button id="btn-suggest-movie">
+              <label class="click-effect">Sugerir filme de ação aleatório</label>
+            </button>
+            <div class="app-brand">Strimio AI</div>
+          </div>
+          </div>
+        </div>
+        <div id="film-page" class="tab-content">
+        	<div class="header">
+        			<div class="back btn-back">
+        				<div class="click-effect">
+        					<svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    							<use xlink:href="src/icons/ios-arrow-back.svg#ios-arrow-back"></use>
+     						 </svg>
+        				</div>
+        			</div>
+        			<div class="share-and-save">
+        			  <svg class="firebase save icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    							
+     						 </svg>
+        				<div class="share">
+        					<div class="click-effect">
+        						<svg class="click-effect icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    							<use xlink:href="src/icons/share-161.svg#path-1"></use>
+    							<use xlink:href="src/icons/share-161.svg#path-2"></use>
+     						 </svg>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	<div class="scroll">
+        		<div class="container">
+          		<img class="image-destaque">
+          		<div class="info">
+          			<h1 class="title"></h1>
+          			
+          			<div class="imdb">
+          				<div class="runtime"></div>
+          				<div class="release_date"></div>
+          				<div class="img">
+          					<img src="src/icons/logos/IMDB_logo.png" />
+          				</div>
+          			  <div class="vote_count"></div>
+          			</div>
+          			
+          		<div class="synopsi"></div>
+          		</div>
+          		<div class="float-bottom">
+          		  
+          		<div class="category"></div>
+          		<div class="float-btn-play">
+        		    <svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+		  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+		  							<span>Assitir agora</span>
+		   					</svg>
+        		  </div>
+          	
+          		</div>
+          	</div>
+          	<div class="cast-title session-title">
+          		Elenco
+          	</div>
+            <div class="actors-actresses"></div>
+            <div class="buttons">
+             <div data-page="trailer" class="element option-bar trailer">
+             	<div class="click-effect">
+             	  <svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+		  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+		   						 </svg>
+             			<label class="label-btn-trailer">Assistir ao trailer</label>
+             	</div>
+             </div>
+             <div class="element firebase save">
+            	<div class="click-effect">
+            	  <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+     						 </svg>
+            	<label>Adicionar a sua biblioteca</label>
+            	</div>
+            </div>
+             <div class="The-movies element firebase cast">
+            	<div class="click-effect">
+            	<label>Assistir na TV</label>
+            	</div>
+            </div>
+            </div>
+            <div class="not-is-drive session-title">
+            	Opções de play
+            </div>
+            <div class="The-series">
+            	<div class="dynamic SelectSeasons"></div>
+              <div class="dynamic seasons"></div>
+            </div>
+            <div class="not-is-drive The-movies">
+		         <div class="players options-play">
+		          	<div data-page="play" class="option-1 option option-bar">
+		          	 	 <div class="button-play">
+		          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+		  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+		   						 </svg>
+		          	 	 </div>
+		          	 	 <div class="content">
+		            	 	 	<div class="language">
+		            	 	 		Idioma | Dublado
+		            	 	  </div>
+		            		  <div class="title">
+		            		  	Player 1
+		            		  </div>
+		            		  <div class="provided-by">
+		            		 		<p>Fornecido por: </p>
+		            		 		<p> Embedder.net</p>
+		            		  </div>
+		            		  <div class="progress-bar">
+		            	 	  </div>
+		          	 	 </div>
+		          	</div>
+		          	<div data-page="play" class="option-2 option option-bar">
+		          	 	 <div class="button-play">
+		          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+		  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+		   						 </svg>
+		          	 	 </div>
+		          	 	 <div class="content">
+		            	 	 	<div class="language">
+		            	 	 		Idioma | Legendado
+		            	 	  </div>
+		            		  <div class="title">
+		            		  	Player 2
+		            		  </div>
+		            		  <div class="provided-by">
+		            		 		<p>Fornecido por: </p>
+		            		 		<p> Vidsrc</p>
+		            		  </div>
+		            		  <div class="progress-bar">
+		            	 	  </div>
+		          	 	 </div>
+		          	</div>
+		          	<div data-page="play" class="option-3 option option-bar">
+		          	 	 <div class="button-play">
+		          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+		  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+		   						 </svg>
+		          	 	 </div>
+		          	 	 <div class="content">
+		            	 	 	<div class="language">
+		            	 	 		Idioma | Dublado
+		            	 	  </div>
+		            		  <div class="title">
+		            		  	Player 3
+		            		  </div>
+		            		  <div class="provided-by">
+		            		 		<p>Fornecido por: </p>
+		            		 		<p> Superembeds</p>
+		            		  </div>
+		            		  <div class="progress-bar">
+		            	 	  </div>
+		          	 	 </div>
+		          	</div>
+		          	<div data-page="play" class="option-4 option option-bar">
+		          	 	 <div class="button-play">
+		          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+		  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+		   						 </svg>
+		          	 	 </div>
+		          	 	 <div class="content">
+		            	 	 	<div class="language">
+		            	 	 		Idioma | Legendado
+		            	 	  </div>
+		            		  <div class="title">
+		            		  	Player 4
+		            		  </div>
+		            		  <div class="provided-by">
+		            		 		<p>Fornecido por: </p>
+		            		 		<p> Multiembed</p>
+		            		  </div>
+		            		  <div class="progress-bar">
+		            	 	  </div>
+		          	 	 </div>
+		          	</div>
+		          </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        	</div>
+        	<div class="back-smart-cast-options"></div>
+        	<div class="not-is-drive options-player-smartTv">
+        	  <div class="marker"></div>
+        	  <p class="guide">
+        	    Para usar esta função, acesse o app em sua Smart TV, e faça login da mesma conta Prime TV+ deste dispositivo
+        	  </p>
+            <div class="option-cast cast1">
+               <div class="button-play">
+          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+   						 </svg>
+        	 	   </div>
+          	 	 <div class="content">
+            	 	 	<div class="language">
+            	 	 		Idioma | dublado
+            	 	  </div>
+            		  <div class="title">
+            		  	Player 1
+            		  </div>
+            		  <div class="provided-by">
+            		 		<p>Fornecido por: </p>
+            		 		<p> Embedder</p>
+            		  </div>
+            		  <div class="progress-bar">
+          	 	  </div>
+        	 	 </div>
+            </div>
+            <div class="option-cast cast2">
+              <div class="button-play">
+          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+   						 </svg>
+        	 	   </div>
+          	 	 <div class="content">
+            	 	 	<div class="language">
+            	 	 		Idioma | Legendado
+            	 	  </div>
+            		  <div class="title">
+            		  	Player 2
+            		  </div>
+            		  <div class="provided-by">
+            		 		<p>Fornecido por: </p>
+            		 		<p> Vidsrc</p>
+            		  </div>
+            		  <div class="progress-bar">
+          	 	  </div>
+        	 	 </div>
+            </div>
+            <div class="option-cast cast3">
+              <div class="button-play">
+          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+   						 </svg>
+        	 	   </div>
+          	 	 <div class="content">
+            	 	 	<div class="language">
+            	 	 		Idioma | dublado
+            	 	  </div>
+            		  <div class="title">
+            		  	Player 3
+            		  </div>
+            		  <div class="provided-by">
+            		 		<p>Fornecido por: </p>
+            		 		<p> Superembeds</p>
+            		  </div>
+            		  <div class="progress-bar">
+          	 	  </div>
+        	 	 </div>
+            </div>
+            <div class="option-cast cast4">
+              <div class="button-play">
+          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+   						 </svg>
+        	 	   </div>
+          	 	 <div class="content">
+            	 	 	<div class="language">
+            	 	 		Idioma | Legendado
+            	 	  </div>
+            		  <div class="title">
+            		  	Player 2
+            		  </div>
+            		  <div class="provided-by">
+            		 		<p>Fornecido por: </p>
+            		 		<p> Multiembed</p>
+            		  </div>
+            		  <div class="progress-bar">
+          	 	  </div>
+        	 	 </div>
+            </div>
+          </div>
+        </div>
+        <div id="play" class="tab-content">
+        	<div class="scroll">
+        		<div class="media">
+        			
+        		</div>
+        	</div>
+        </div>
+        <div id="episode-details" class="tab-content">
+        	<div class="header">
+        			<div class="back btn-back">
+        				<div class="click-effect">
+        					<svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    							<use xlink:href="src/icons/ios-arrow-back.svg#ios-arrow-back"></use>
+     						 </svg>
+        				</div>
+        			</div>
+        			<div class="share-and-save">
+        				
+        				<svg class="click-effect icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    							<use xlink:href="src/icons/share-161.svg#path-1"></use>
+    							<use xlink:href="src/icons/share-161.svg#path-2"></use>
+     						 </svg>
+        			</div>
+        		</div>
+        	<div class="scroll">
+        		<div class="container">
+          		<img class="image-destaque">
+          		<div class="info">
+          			<h1 class="title"></h1>
+          			
+          			<div class="imdb">
+          				<div class="runtime"></div>
+          				<div class="episode-name"></div>
+          			  <div class="date"></div>
+          			</div>
+          			
+          		<div class="synopsi"></div>
+          		</div>
+          		
+          		<div class="category"></div>
+          	</div>
+          	<div class="buttons">
+         	    <div class="element firebase cast">
+              	<div class="click-effect">
+                	<label>Assistir na TV</label>
+              	</div>
+              </div>
+          	</div>
+          	<div class="session-title">
+            	Opções de play
+            </div>
+						<div class="options-play">
+            	<div data-page="play" class="option-1 option option-bar">
+            	 	 <div class="button-play">
+            	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+     						 </svg>
+            	 	 </div>
+            	 	 <div class="content">
+	            	 	 	<div class="language">
+	            	 	 		Idioma | Dublado
+	            	 	  </div>
+	            		  <div class="title">
+	            		  	Player 1
+	            		  </div>
+	            		  <div class="provided-by">
+	            		 		<p>Fornecido por: </p>
+	            		 		<p> Embedder.net</p>
+	            		  </div>
+	            		  <div class="progress-bar">
+	            	 	  </div>
+            	 	 </div>
+            	</div>
+            	<div data-page="play" class="option-2 option option-bar">
+            	 	 <div class="button-play">
+            	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+     						 </svg>
+            	 	 </div>
+            	 	 <div class="content">
+	            	 	 	<div class="language">
+	            	 	 		Idioma | Legendado
+	            	 	  </div>
+	            		  <div class="title">
+	            		  	Player 2
+	            		  </div>
+	            		  <div class="provided-by">
+	            		 		<p>Fornecido por: </p>
+	            		 		<p> Vidsrc</p>
+	            		  </div>
+	            		  <div class="progress-bar">
+	            	 	  </div>
+            	 	 </div>
+            	</div>
+            	<div data-page="play" class="option-3 option option-bar">
+            	 	 <div class="button-play">
+            	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+     						 </svg>
+            	 	 </div>
+            	 	 <div class="content">
+	            	 	 	<div class="language">
+	            	 	 		Idioma | Dublado
+	            	 	  </div>
+	            		  <div class="title">
+	            		  	Player 3
+	            		  </div>
+	            		  <div class="provided-by">
+	            		 		<p>Fornecido por: </p>
+	            		 		<p> Superembeds</p>
+	            		  </div>
+	            		  <div class="progress-bar">
+	            	 	  </div>
+            	 	 </div>
+            	</div>
+            	<div data-page="play" class="option-4 option option-bar">
+            	 	 <div class="button-play">
+            	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+    							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+     						 </svg>
+            	 	 </div>
+            	 	 <div class="content">
+	            	 	 	<div class="language">
+	            	 	 		Idioma | Legendado
+	            	 	  </div>
+	            		  <div class="title">
+	            		  	Player 4
+	            		  </div>
+	            		  <div class="provided-by">
+	            		 		<p>Fornecido por: </p>
+	            		 		<p> Multiembed</p>
+	            		  </div>
+	            		  <div class="progress-bar">
+	            	 	  </div>
+            	 	 </div>
+            	</div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        	</div>
+        	<div class="back-smart-cast-options"></div>
+        	<div class="options-player-smartTv">
+        	  <div class="marker"></div>
+        	  <p class="guide">
+        	    Para usar esta função, acesse o app em sua Smart TV, e faça login da mesma conta Prime TV+ deste dispositivo
+        	  </p>
+            <div class="option-cast cast1">
+               <div class="button-play">
+          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+   						 </svg>
+        	 	   </div>
+          	 	 <div class="content">
+            	 	 	<div class="language">
+            	 	 		Idioma | dublado
+            	 	  </div>
+            		  <div class="title">
+            		  	Player 1
+            		  </div>
+            		  <div class="provided-by">
+            		 		<p>Fornecido por: </p>
+            		 		<p> Embedder</p>
+            		  </div>
+            		  <div class="progress-bar">
+          	 	  </div>
+        	 	 </div>
+            </div>
+            <div class="option-cast cast2">
+              <div class="button-play">
+          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+   						 </svg>
+        	 	   </div>
+          	 	 <div class="content">
+            	 	 	<div class="language">
+            	 	 		Idioma | Legendado
+            	 	  </div>
+            		  <div class="title">
+            		  	Player 2
+            		  </div>
+            		  <div class="provided-by">
+            		 		<p>Fornecido por: </p>
+            		 		<p> Vidsrc</p>
+            		  </div>
+            		  <div class="progress-bar">
+          	 	  </div>
+        	 	 </div>
+            </div>
+            <div class="option-cast cast3">
+              <div class="button-play">
+          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+   						 </svg>
+        	 	   </div>
+          	 	 <div class="content">
+            	 	 	<div class="language">
+            	 	 		Idioma | dublado
+            	 	  </div>
+            		  <div class="title">
+            		  	Player 3
+            		  </div>
+            		  <div class="provided-by">
+            		 		<p>Fornecido por: </p>
+            		 		<p> Superembeds</p>
+            		  </div>
+            		  <div class="progress-bar">
+          	 	  </div>
+        	 	 </div>
+            </div>
+            <div class="option-cast cast4">
+              <div class="button-play">
+          	 	 	<svg class="click-effect icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  							<use xlink:href="src/icons/ios-play.svg#path-1"></use>
+   						 </svg>
+        	 	   </div>
+          	 	 <div class="content">
+            	 	 	<div class="language">
+            	 	 		Idioma | Legendado
+            	 	  </div>
+            		  <div class="title">
+            		  	Player 2
+            		  </div>
+            		  <div class="provided-by">
+            		 		<p>Fornecido por: </p>
+            		 		<p> Multiembed</p>
+            		  </div>
+            		  <div class="progress-bar">
+          	 	  </div>
+        	 	 </div>
+            </div>
+          </div>
+        </div>
+        <div id="trailer" class="tab-content">
+        	<div class="scroll">
+        		<div class="media"></div>
+        	</div>
+        </div>
+        <div id="channels" class="tab-content">
+          <div class="scroll">
+            <div class="media">
+              <iframe loading="lazy" allow="encrypted-media" allowfullscreen frameborder="0" ></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- END OF SEARCH PAGE -->
+        <!-- END OF SEARCH PAGE -->
+  </main>
+  </div>
+   <nav>
+    <button class="option-bar active option-nav-bottom" data-page="home">
+      <div class="click-effect">
+        <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="src/icons/ios-wallet.svg#ios-wallet"></use>
+        </svg>
+        <label>Home</label>
+      </div>
+    </button>
+    <button class="option-bar option-nav-bottom" data-page="discover">
+      <div class="click-effect">
+        <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="src/icons/ios-compass.svg#ios-compass-1"></use>
+          <use xlink:href="src/icons/ios-compass.svg#ios-compass-2"></use>
+        </svg>
+        
+        <label>Descobrir</label>
+      </div>
+    </button>
+    <button class="option-bar option-nav-bottom" data-page="library">
+      <div class="click-effect">
+        <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        	<use xlink:href="src/icons/ios-albums.svg#ios-albums"></use>
+        </svg>
+        <label>Biblioteca</label>
+      </div>
+    </button>
+    <button class="option-bar option-nav-bottom" data-page="profile">
+      <div class="click-effect">
+        <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        	<use xlink:href="src/icons/ios-cog.svg#ios-cog"></use>
+        </svg> 
+        <!-- <img class="profile" src="accets/default_profile_photo/fp_2.jpg" alt="" />  -->
+        <label>Config.</label>
+      </div>
+    </button>
+  </nav>
+<script type="text/javascript" charset="utf-8">
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("DOMContentLoaded", function() {
+        navigator.serviceWorker
+        .register("serviceWorker.js")
+        .then(res => console.log("service worker registered"))
+        .catch(err => console.log("service worker not registered", err));
+      });
+    }
+    
+    
+     
+    /*if ('serviceWorker' in navigator) {
+      // Obtém todos os registros de service workers
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        // Itera sobre todos os registros
+        registrations.forEach(function(registration) {
+          // Remove o service worker
+          registration.unregister();
+        });
+      });
+    }
+*/
+  </script>
+  
+  <script src="src/app/javascript/search/Search.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/App.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/tmdb/cards.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/refresh.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/bottom-elastic-effect.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/floating-elements.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/share.js" type="text/javascript" charset="utf-8"></script>
+  
+  
+  <!-- CONTAINS GLOBAL FUNCTIONS -->
+  
+  <script src="src/app/javascript/firebase/channels.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/tmdb/mediaDetails.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/global/index.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/firebase/App.js" type="module" charset="utf-8"></script>
+  <script src="src/app/javascript/tmdb/page-play.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/navigation.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/app/javascript/loading.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
