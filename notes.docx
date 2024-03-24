@@ -1,0 +1,5 @@
+• Tecnologia cou estrutura de funcionamento
+- Single Page Application (SPA)
+
+-- Paginas stack-tabs não podem ter botão de navegação para outras stack-tabs, só para outras tab-bar!!!!
+não tente, não vai funcionar, cai dar erro porque vai ficar sem funcionar o botão de voltar
