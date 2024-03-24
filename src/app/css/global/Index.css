@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+	--blue-color: #0697FE;
+	/* --blue-color: #691df2; */
+}
+
+::-webkit-scrollbar { 
+  display: none;
+  background: red;
+}
+
+*:not(:empty) {/* inclui todos o elemento, excluindo apenas os que não tem texto, ou seja peda todos os que tem texto*/
+  user-select: none; 
+  
+}
+
+* {
+  /* border: 1px solid red; */
+  transition: .3s;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-weight: medium;
+  font-family: 'Montserrat', sans-serif; 
+  /* font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+}
+
+.click-effect:hover {
+  pointer-events: none;
+}
+
+.click-effect {
+	position: relative;
+}
+
+.click-effect::after {
+  border-radius: 8em;
+  transition: .2s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  inset: 0;
+  pointer-events: none;
+}
+
+.click-effect:hover::after{
+  background: #f6f6f61d;
+  border-radius: 0em;
+}
+
+ .icon {
+  fill: currentColor;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+
+#alert {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #00000074;
+	backface-visibility: hidden;
+	z-index: 20000;
+	align-items: center;
+	justify-content: center;
+	transition: 1s;
+}
+
+#alert.active {
+	display: flex;
+	backface-visibility: visible;
+}
+
+#alert .content {
+	width: 18em;
+	height: auto;
+	background:  #1f1f1f99;
+	webkit-backdrop-filter: blur(40px);
+	backdrop-filter: blur(40px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 1.2em;
+  display: none;
+}
+
+#alert .content.active {
+  display: flex;
+}
+
+#alert .content .top {
+	padding: 1em 1.5em 1em 1.5em;
+}
+
+#alert .content .top h3 {
+	font-weight: 700;
+	font-size: 1em;
+	color: #f6f6f6;
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+}
+
+#alert .content .top p {
+	font-weight: 500;
+	font-size: .8em;
+	color: #f6f6f698;
+	padding-bottom: 1em;
+}
+
+#alert .content .bottom {
+	border-top: .1px solid #f6f6f635;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#alert .content .bottom div {
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--blue-color);
+	font-weight: 600;
+	width: 100%;
+}
+
+#alert .type-confirm .bottom div:first-child {
+	border-right: .1px solid #f6f6f635;
+}
