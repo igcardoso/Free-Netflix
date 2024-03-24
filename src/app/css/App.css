@@ -45,6 +45,14 @@
   opacity: 1;
 }
 
+#loading-app .intro-animated {
+  opacity: 1;
+}
+
+#loading-app .intro-animated.active {
+  opacity: 0;
+}
+
 /* ICONS */
 
 nav  .icon {
