@@ -38,6 +38,7 @@
 }
 
 #loading-app .intro-static {
+	padding-bottom: 2em;
   opacity: 0;
 }
 
