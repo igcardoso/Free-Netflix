@@ -1,0 +1,418 @@
+ /* @font-face {
+    font-family: "Montserrat";
+    src: url("../../../fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+        format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+/* All */
+
+* {
+    margin: 0;
+    padding: 0;
+    /*font-family: "Montserrat", sans-serif;*/
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+p {
+    font-size: 0.8em;
+    opacity: 0.7;
+    text-align: center;
+    color: #f6f6f6;
+    margin: 0 2em 0 2em;
+}
+
+a {
+    color: #0697FE;
+}
+
+.icon {
+    fill: currentColor;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+/* ALL PAGES */
+
+.tab-content {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+    transition: 0.3s;
+    display: none;
+    z-index: 8;
+    overflow: hidden;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+/* LOADING */
+
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000 /* #0d0d0d85 */;
+    z-index: 199;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.spin {
+    animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-spin-circle {
+    transform-origin: center;
+    animation-name: loading-spin-circle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    height: 1px;
+}
+
+.loading {
+    opacity: 0.8;
+}
+
+/* BODY */
+
+body {
+    background: #000000;
+}
+
+/* REST OF THE CODE */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header .options {
+    width: calc(100% - 1em);
+    background: #000000;
+    display: block;
+    padding: 0 0.5em 0 0.5em;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+}
+
+header .options.active {
+    height: calc(2.5em + 3em * 3);
+}
+
+header .options .sub-option {
+    color: #ffffff93;
+    width: calc(100% - 1em);
+    padding-left: 1em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: #ffffff12;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    gap: .5em;
+}
+
+header .options .store {
+    justify-content: center;
+    background: #f6f6f6;
+    color: #0697FE;
+    font-weight: 800;
+    border-radius: 8em;
+}
+
+header .align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em;
+    background: #000000;
+}
+
+header .title {
+    color: #f6f6f6;
+    font-weight: 500;
+    margin-left: 3.5em;
+}
+
+.next-page {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background: none;
+    color: #0697FE;
+    border: none;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu div {
+    width: 1.5em;
+    height: 3px;
+    background: #0697FE;
+    border-radius: 8em;
+}
+
+.menu div:last-child {
+    margin-top: 0.3em;
+}
+
+.content-grid {
+    width: 100%;
+    height: 35em;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-bottom: 3em;
+}
+
+.content-grid:after {
+    content: "";
+    inset: 0;
+    width: 100%;
+    height: 23em;
+    background: linear-gradient(to top, #000000, #00000000);
+    z-index: 12;
+    position: absolute;
+    top: 3em;
+    left: 0;
+}
+
+.content-grid:before {
+    content: "";
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #000000, #00000000);
+    z-index: 12;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.content-grid img {
+    display: flex;
+    position: absolute;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    height: 23em;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.content-grid .info {
+    position: absolute;
+    bottom: 8em;
+    width: 100%;
+    z-index: 13;
+    left: 0;
+}
+
+.content-grid h2 {
+    color: #f6f6f6;
+    font-weight: 500;
+    margin: 0 2em 0.5em 2em;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 4em;
+    overflow: hidden;
+    touch-action: pan-y;
+    position: absolute;
+    bottom: 3em;
+    left: 0;
+    z-index: 13;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-left: 10px;
+}
+
+.slide {
+    width: 14em;
+    height: 7em;
+    overflow: hidden;
+    border-radius: 1.2em;
+    flex-shrink: 0;
+    margin: 0 1em 0 1em;
+    position: relative;
+    border: 4px solid #ffffff5b;
+}
+
+.slide img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transform: scale(1.2);
+}
+
+.slide:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    content: "";
+    inset: 0;
+    background: #00000067;
+}
+
+.slide .button {
+    background: linear-gradient(25deg, #ffffff24, #ffffff52);
+    border-radius: 8em;
+    padding: 0.5em;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    right: auto;
+    z-index: 5;
+    margin: auto 0;
+    webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: #f6f6f6;
+}
+
+.carousel .more {
+    width: 2em;
+    height: 2em;
+    border-radius: 8em;
+    background: #ffffff30;
+    border: none;
+    margin-top: 3em;
+}
+
+.carousel .more svg {
+    fill: #f6f6f6;
+}
+
+.Create-account {
+    padding: 1em;
+    background: #f6f6f6;
+    border: none;
+    border-radius: 8em;
+    font-weight: 600;
+    position: absolute;
+    bottom: 3em;
+    left: 1em;
+    right: 1em;
+    width: calc(100% - 1em - 1em);
+    color: #000000;
+}
+
+/* LOGIN PAGE */
+
+#login,
+#create-account {
+    height: calc(100vh - 6em);
+    padding-top: 6em;
+}
+
+#login h2,
+#create-account h2 {
+    color: #f6f6f6;
+    text-align: center;
+    margin: 0 1em 0 1em;
+}
+
+#login form,
+#create-account form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+#login form input,
+#create-account form input {
+    padding: 1.5em;
+    width: calc(100% - 5em);
+    background: #161616;
+    border: none;
+    border-radius: 1.2em;
+    color: #ffffff;
+}
+
+#login form input:focus,
+#create-account form input:focus {
+    outline: 1px solid #0697FE;
+}
+
+#login .login,
+#create-account .login {
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+#login .login button,
+#create-account .login button {
+    background: #0697FE;
+    padding: 1em;
+    border: none;
+    border-radius: 8em;
+    color: #f6f6f6;
+    font-weight: 600;
+}
+
+#login p,
+#create-account p {
+    margin-top: 2em;
+}
+
+form input.error {
+  outline: 2px solid red;
+  animation: error-input 1s linear;
+}
+
+@keyframes error-input {
+  0% {
+    transform: translateX(-10px);
+  } 25% {
+    transform: translateX(10px);
+  } 50% {
+    transform: translateX(-10px);
+  } 100 % {
+    transform: translateX(0);
+  }
+}
