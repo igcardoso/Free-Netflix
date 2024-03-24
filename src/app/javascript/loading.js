@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('#pages-and-header').style.display = 'none';
   setTimeout(function() {
-    document.querySelector('#loading-app img').classList.add('netflix-effect');
+    document.querySelector('#loading-app img').src = '../../../accets/app-icons/Logonetflix.png';
   }, 700);
 	setTimeout(function() {
 		document.querySelector('#loading-app').style.display = 'none';
