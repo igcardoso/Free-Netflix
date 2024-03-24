@@ -3,7 +3,7 @@
         "relation": ["delegate_permission/common.handle_all_urls"],
         "target": {
             "namespace": "android_app",
-            "package_name": "netflix.com",
+            "package_name": "xyz.appmaker.nanfny",
             "sha256_cert_fingerprints": [
                 "77:0C:93:04:2E:FF:11:58:F8:E1:37:01:A0:1C:1C:59:BF:32:AE:06:5C:7F:8D:6D:B4:86:71:10:A7:FA:E3:1E"
             ]
