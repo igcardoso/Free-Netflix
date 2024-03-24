@@ -1,0 +1,58 @@
+#refreshIndicator {
+	position: relative;
+	margin: -300px auto 0;
+	background: #ffffff0a;
+	transition: 0.3s ease-out;
+	height: 300px;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+#iconRefreshIndicator {
+	opacity: .8;
+	position: absolute;
+	bottom: 3.5em;
+	left: calc(50% - 1em);
+	right: auto;
+}
+
+.loading {
+	opacity: .8;
+	
+}
+
+.spin {
+	animation: spin .5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spin-loading {
+	animation: spin-loading 1s linear infinite;
+	animation-duration: 1s;
+}
+
+@keyframes spin-loading {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.loading-spin-circle {
+	transform-origin: center;
+	animation-name: loading-spin-circle;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	height: 1px;
+}
