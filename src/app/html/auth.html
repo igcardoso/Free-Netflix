@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../css/Auth/index.css" title="css" type="text/css" />
+    <link rel="stylesheet" href="../css/global/index.css" title="css" type="text/css" />
+    <link rel="manifest" href="../../../manifest.json" />
+      <!-- ios support -->
+    <link rel="apple-touch-icon" href="../../../accets/app-icons//icon-72x72.png">
+    <link rel="apple-touch-icon" href="../../../accets/app-icons//icon-96x96.png">
+    <link rel="apple-touch-icon" href="../../../accets/app-icons//icon-128x128.png">
+    <link rel="apple-touch-icon" href="../../../accets/app-icons//icon-144x144.png">
+    <link rel="apple-touch-icon" href="../../../accets/app-icons//icon-152x152.png">
+    <link rel="apple-touch-icon" href="../../../accets/app-icons//icon-192x192.png">
+    <link rel="apple-touch-icon" href="../../../accets/app-icons//icon-384x384.png">
+    <link rel="apple-touch-icon" href="../../../accets/app-icons//icon-512x512.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <!-- app photo guia -->
+    <link rel="icon" href="../../../../../../accets/app-icons//icon-72x72.png" type="image/png" />
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(function(OneSignal) {
+        OneSignal.init({
+          appId: "e29914b6-2fac-4262-8fcd-b01b2deb7d65",
+        });
+      });
+    </script>
+    <title>Login</title>
+</head>
+<body>
+  <div id="alert">
+ <div class="type-alert content">
+ 	<div class="top">
+ 		<h3>Tem certeza que deseja isso?</h3>
+ 		<p>
+ 			Lorem commodo enim dolore mollit occaecat consequat dolore proident cillum. 
+ 		</p>
+ 	</div>
+ 	<div class="bottom">
+ 		<div class="yes">
+ 			ok
+ 		</div>
+ 	</div>
+ </div>
+ <div class="type-confirm content">
+ 	<div class="top">
+ 		<h3>Tem certeza que deseja isso?</h3>
+ 		<p>Velit sit consectetur enim magna labore consequat adipisicing nisi. Nostrud ea cillum aute commodo nisi.</p>
+ 	</div>
+ 	<div class="bottom">
+ 		<div class="yes">
+ 			ok
+ 		</div>
+ 		<div class="cancel">
+ 			Cancelar
+ 		</div>
+ 	</div>
+ </div>
+</div>
+    <div id="loading">
+        <svg
+            class="spin loading icon"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <g>
+                <circle
+                    cx="16"
+                    cy="16"
+                    fill="none"
+                    r="14"
+                    stroke-width="4"
+                    style="stroke: #0697FE; opacity: 0.2"
+                ></circle>
+            </g>
+            <g class="loading-spin-circle">
+                <circle
+                    cx="16"
+                    cy="16"
+                    fill="none"
+                    r="14"
+                    stroke-width="4"
+                    style="
+                        stroke: #0697FE;
+                        stroke-dasharray: 80px;
+                        stroke-dashoffset: 60px;
+                    "
+                ></circle>
+            </g>
+        </svg>
+    </div>
+    <header>
+        <div class="align">
+            <div class="menu">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="title">Prime TV+</div>
+            <div>
+                <button data-page="login" class="option-bar next-page">
+                    inciar sessão
+                </button>
+            </div>
+        </div>
+        <div class="options">
+            <div class="sub-option">
+                <div>
+                    <svg
+                        class="icon"
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <use
+                            xlink:href="../../icons/ios-text.svg#ios-text"
+                        ></use>
+                    </svg>
+                </div>
+                <div>Termos e condições</div>
+            </div>
+            <div class="sub-option">
+                <div>
+                    <svg
+                        class="icon"
+                        viewBox="0 0 1024 1024"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <use
+                            xlink:href="../../icons/ios-finger-print.svg#ios-finger-print-1"
+                        ></use>
+                        <use
+                            xlink:href="../../icons/ios-finger-print.svg#ios-finger-print-2"
+                        ></use>
+                        <use
+                            xlink:href="../../icons/ios-finger-print.svg#ios-finger-print-3"
+                        ></use>
+                        <use
+                            xlink:href="../../icons/ios-finger-print.svg#ios-finger-print-4"
+                        ></use>
+                        <use
+                            xlink:href="../../icons/ios-finger-print.svg#ios-finger-print-5"
+                        ></use>
+                    </svg>
+                </div>
+                <div>Politica de privacidade</div>
+            </div>
+            <div class="sub-option store">Fine store</div>
+        </div>
+    </header>
+    <div id="home" class="tab-content">
+        <div class="content-grid">
+            <img src="../../../accets/Auth/backdrop.jpg" />
+            <div class="info">
+                <h2>Assista uma grande variedadede conteúdos</h2>
+                <p>
+                    Desfrute de uma infinita variedade de filmes, séries e
+                    canais de TV gratuitos em um único aplicativo! Com um
+                    design intuitivo e de fácil navegação, nossa plataforma
+                    oferece entretenimento ilimitado na ponta dos seus
+                    dedos.
+                </p>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="slide">
+                    <img
+                        src="../../../accets/Auth/hbo-hover_0.png"
+                        alt=""
+                    />
+                    <div class="button">Disponível</div>
+                </div>
+                <div class="slide">
+                    <img
+                        src="../../../accets/Auth/DC-Hover (1).png"
+                        alt=""
+                    />catálogo
+                    <div class="button">Disponível</div>
+                </div>
+                <div class="slide">
+                    <img
+                        src="../../../accets/Auth/ucl-hubs-br.jpg"
+                        alt=""
+                    />
+                    <div class="button">Disponível</div>
+                </div>
+                <div class="slide more">
+                    <svg
+                        class="svg-icon"
+                        viewBox="0 0 1024 1024"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            id="ios-arrow-forward"
+                            d="M588.2 512L334 258c-18.8-18.8-18.8-49.2 0-67.8s49.2-18.6 68 0L690 478c18.2 18.2 18.6 47.4 1.4 66.2L402.2 834c-9.4 9.4-21.8 14-34 14s-24.6-4.6-34-14c-18.8-18.8-18.8-49.2 0-67.8l254-254.2z"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <button
+            data-page="create-account"
+            class="Create-account option-bar"
+        >
+            Criar um conta
+        </button>
+    </div>
+    <div id="login" class="tab-content">
+        <h2>Inicie sessão com o e-mail Prime TV+</h2>
+        <form id="loginForm">
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Email Prime TV+"
+            />
+            <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Senha"
+            />
+            <div class="login">
+                <button type="submit">Iniciar sessão</button>
+            </div>
+        </form>
+        <p>
+            Ao fazer login, você concorda com os
+            <a href="">Termos de Serviço</a> e a
+            <a href="">Politica de Privacidade</a>. As informações do seu
+            Email são usadas para permitir que você inicie sessão com
+            segurança e acesse seus dados. O Prime TV registra determinados
+            dados para fins de segurança, suporte e relatórios. Se você
+            concordar, o Prime TV também poderá usar suas informações de
+            Email para enviar a você e-mails de marketing e comunicações,
+            inclusive com base no seu uso dos serviços da Prime TV+.
+        </p>
+    </div>
+    <div id="create-account" class="tab-content">
+        <div class="scroll">
+          <h2>Crie uma conta pra ter acesso aos conteúdos</h2>
+            <form id="createAccountForm">
+                <input type="text" id="FirstName" name="FirstName"  placeholder="Nome" />
+               
+                <input type="text" id="LastName" name="LastName"  placeholder="Sobrenome" />
+              
+                <input type="text" id="UserName" name="UserName"  placeholder="Nome de usuário" />
+             
+                <input type="email" id="signUp_email" name="signUp_email"  placeholder="Seu email" />
+                
+                <input type="password" id="signUp_password" name="signUp_password"  placeholder="Crie uma senha" />
+                
+                <div class="login">
+                    <button type="submit">Criar conta</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script
+        src="../javascript/Auth/index.js"
+        type="module"
+        charset="utf-8"
+    ></script>
+    <script src="../javascript/Auth/writeData.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../javascript/global/Index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
