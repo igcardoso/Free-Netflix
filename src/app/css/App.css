@@ -46,11 +46,11 @@
 }
 
 #loading-app .intro-animated {
-  opacity: 1;
+  display: none;
 }
 
 #loading-app .intro-animated.active {
-  opacity: 0;
+  display: flex;
 }
 
 /* ICONS */
