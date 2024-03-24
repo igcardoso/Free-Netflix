@@ -1,0 +1,116 @@
+{
+    "name": "Prime TV+",
+    "short_name": "Prime TV+",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "orientation": "portrait-primary",
+    "scope": "https://playflix-os.netlify.app/",
+    "prefer_related_applications": false,
+    "id": "1e42bc7a-768d-461a-86d7-7dd3d2da9032",
+    "supports_edge_panel": false,
+    "widgets": {
+        "my_widget": {
+            "name": "Meu Widget",
+            "description": "Um widget útil para minha PWA",
+            "icon": "icons/widget-icon.png",
+            "url": "/widget.html"
+        }
+    },
+    "scope_extensions": ["notifications", "offline_storage"],
+    "launch_handler": {
+        "ios": {
+            "url": "https://playflix-os.netlify.app/index.html"
+        },
+        "android": {
+            "url": "https://playflix-os.netlify.app/index.html"
+        },
+        "windows": {
+            "url": "https://playflix-os.netlify.app/desktop.html"
+        }
+    },
+    "protocol_handlers": [
+        {
+            "url": "/filme?id=%s",
+            "protocol": "tmdb"
+        },
+        {
+            "url": "/trailer?id=%s",
+            "protocol": "youtube"
+        }
+    ],
+
+    "icons": [
+        {
+            "src": "/accets/app-icons/icon-72x72.png",
+            "type": "image/png",
+            "sizes": "72x72",
+            "purpose": "any"
+        },
+        {
+            "src": "/accets/app-icons/icon-96x96.png",
+            "type": "image/png",
+            "sizes": "96x96",
+            "purpose": "any"
+        },
+        {
+            "src": "/accets/app-icons/icon-128x128.png",
+            "type": "image/png",
+            "sizes": "128x128",
+            "purpose": "any"
+        },
+        {
+            "src": "/accets/app-icons/icon-144x144.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any"
+        },
+        {
+            "src": "/accets/app-icons/icon-152x152.png",
+            "type": "image/png",
+            "sizes": "152x152",
+            "purpose": "any"
+        },
+        {
+            "src": "/accets/app-icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+        {
+            "src": "/accets/app-icons/icon-384x384.png",
+            "type": "image/png",
+            "sizes": "384x384",
+            "purpose": "any"
+        },
+        {
+            "src": "/accets/app-icons/icon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        }
+    ],
+    "description": "Desfrute de uma infinita variedade de filmes, séries e canais de TV gratuitos em um único aplicativo! Com um design intuitivo e de fácil navegação, nossa plataforma oferece entretenimento ilimitado na ponta dos seus dedos. Transmita seus conteúdos favoritos em alta qualidade, sem sobrecarregar seu dispositivo, graças ao baixo tamanho em megabits. Transforme seu tempo livre em uma experiência cinematográfica sem complicações, onde quer que você esteja!",
+    "lang": "pt-br",
+    "dir": "ltr",
+    "display_override": ["standalone", "window-controls-overlay"],
+    "categories": ["education", "lifestyle"],
+    "screenshots": [
+        {
+            "src": "https://raw.githubusercontent.com/igcardoso/app-da-sala-1-TI-b/main/accets/preview/Screenshot_2022-12-24-22-39-58-564_io.kodular.Ioliveiracardoso76.Multiplex.jpg",
+            "sizes": "750x1334",
+            "type": "image/jpg"
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "play",
+            "url": "https://finestore.netlify.app"
+        },
+        {
+            "platform": "itunes",
+            "url": "https://finestore.netlify.app"
+        }
+    ]
+}
