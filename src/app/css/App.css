@@ -37,39 +37,12 @@
 	justify-content: center;
 }
 
-#loading-app p {
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 2em;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  transition: 2s linear;
-  overflow: hidden;
-  width: .6em;
-  height: 1em;
-  text-align: center;
+#loading-app .intro-static {
+  opacity: 0;
 }
 
-#loading-app p.netflix-effect {
-  width: 100%;
-}
-
-#loading-app p span {
-  color: #ffffff;
-  font-weight: 200;
-  font-size: 1em;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-#loading-app .version {
-  position: absolute;
-  bottom: 1em;
-  left: auto;
-  right: auto;
-  margin: auto;
-  opacity: .4;
-  font-weight: 800;
-  font-size: .6em;
-  display: none;
+#loading-app .intro-static.active {
+  opacity: 1;
 }
 
 /* ICONS */
